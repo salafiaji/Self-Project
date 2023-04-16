@@ -1,0 +1,68 @@
+/* Form styles */
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6WNIUMQVtg3z-Mwy5i53f-6DNcadattmwTg&usqp=CAU);
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+.div-card {
+    background-color: white;
+    width: 30%;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    max-width: 500px;
+    padding: 10px 10px 2px 10px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 2%;
+    height: 2rem;
+    background-color: rgb(243, 244, 245);
+    border-color: rgb(243, 244, 245);
+    border: 0ch;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: blue;
+    color: antiquewhite;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    background-color: blue;
+    color: antiquewhite;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button3:hover {
+    background-color: blue;
+    color: antiquewhite;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.submit:hover {
+    background-color: blue;
+    color: antiquewhite;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.submit {    
+    margin-top: 1rem;
+    background-color: white;
+    color: blue;
+}
+
+
