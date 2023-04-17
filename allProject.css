@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-light;
+  src: url(font/Roboto-Light.ttf);
+}
+
+body {
+  font-family: Roboto-light, Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: 20px;
+  font-size: 14px;
+}
+
+:root {
+  --bg: hsl(230, 11%, 11%);
+  --red: hsl(358, 51%, 49%);
+  --white-d: hsl(0, 0%, 86%);
+  --grey-d: hsl(0, 0%, 22%);
+  --grey-m: hsl(0, 0%, 30%);
+  --grey: hsl(0, 0%, 67%);
+  --grey-l: hsl(0, 1%, 81%);
+}
+
+body {
+  background-color: whitesmoke;
+  color: rgb(20, 20, 20);
+  font-weight: 500;
+  max-width: 1474px;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+  
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+img,
+.icons {
+  cursor: pointer;
+}
+
+img {
+  width: 20%;
+  margin-bottom: 15px;
+}
+
+
+
+
+.icons {
+  filter: invert(1);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* background-color:var(--grey-m); */
+}
+
+.icons.menu1 {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-left: -5px;
+}
+
+.icons.red {
+  filter: invert(15%) sepia(96%) saturate(7291%) hue-rotate(360deg)
+    brightness(102%) contrast(107%);
+}
+
+.title-icon{
+  position: relative;
+  top:2.5px;
+}
+
+/* Sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px 0 10px;
+  background-color: #faf6f6e7;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+/* Common Properties */
+header,
+nav,
+.categories {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+
+/* header section  */
+header {
+  font-size: 20px;
+}
+
+header .logo {
+  height: 40px;
+  width: 40px;
+  justify-self: baseline;
+
+}
+
+
+nav .icons {
+  margin: 0 10px;
+}
+
+.profile-pic {
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+/* Aside Section  */
+aside {
+  z-index: 200;
+  padding: 10px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #181818e7;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+aside section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+
+aside section .icons {
+  margin-bottom: 20px;
+}
+
+aside section .icons.channels {
+  filter: none;
+  border-radius: 50%;
+}
+
+/* Main section  */
+main {
+  width: 85%;
+  
+  margin: 100px 0 0 80px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between; 
+}
+
+.flex-container > div {
+  background-color: white;
+  flex-basis: 20%;
+  margin: 10px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.flex-item-left {
+  
+  flex: 25%;
+}
+
+.flex-item-right {
+  
+  flex: 25%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 500px) {
+  .flex-item-right, .flex-item-left {
+    flex: 50%;
+  }
+}

@@ -1,0 +1,252 @@
+/* Reset default margins and paddings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Define the wrapper to center the content */
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/* Define the sidebar styles */
+.sidebar {
+	background-color: #f8f2f2;
+	color: #fff;
+	height: 100vh;
+	width: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sidebar-top {
+	margin-top: 20px;
+}
+
+.sidebar-middle {
+	margin-top: 50px;
+}
+
+.sidebar-middle i {
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.sidebar-bottom {
+	margin-top: auto;
+	margin-bottom: 20px;
+}
+
+.sidebar-bottom i {
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* Define the navbar styles */
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+header a {
+	color: #fff;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+/* Define the main content styles */
+.main-content {
+	flex: 1;
+	padding: 20px;
+}
+
+/* Define the grid styles */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.grid-item {
+	background-color: #f1f1f1;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	position: relative;
+}
+
+.grid-item img {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	flex-shrink: 0;
+	position: relative;
+	z-index: 1;
+}
+
+/* .grid-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 1px;
+	background-color: #ccc;
+	z-index: 0;
+} */
+
+.grid-item p:first-of-type {
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.grid-item p:last-of-type {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.grid-item .caption {
+	font-weight: bold;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 1000px) {
+	/* Reduce the number of grid columns to 2 */
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	/* Make the sidebar hidden by default */
+	.sidebar {
+		display: none;
+	}
+
+	/* Show the sidebar when the hamburger menu is clicked */
+	#hamburger:checked ~ .sidebar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* Style the hamburger menu icon */
+	.hamburger-menu {
+		display: block;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+	.hamburger-menu span {
+		display: block;
+		height: 3px;
+		width: 25px;
+		background-color: #fff;
+		margin-bottom: 5px;
+	}
+
+
+	/* Hide the navbar links */
+	header a {
+		display: none;
+	}
+}
+
+
+
+/* body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+aside {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 20%;
+  float: left;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+.grid-item{
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.grid-item:nth-child(odd){
+    background-color: #ccc;
+}
+@media screen and (max-width: 600px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  */
+
+
+
+
+ /* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 600px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ */
+
+ 
