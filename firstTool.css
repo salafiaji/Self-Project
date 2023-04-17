@@ -13,18 +13,22 @@ img {
 
 main {
     display: flex;
-    flex-direction: row;
     gap: 20px;
     width: 100%;
     padding: 10px 20px;
-    height: 350px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  .items {
+    flex: 40%;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
     main {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+      flex-direction: column; 
     }
   }
 
@@ -33,9 +37,7 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 50px 20px 0 20px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-grow: 300px;
+    flex: 20%;
 }
 
 button {
@@ -48,9 +50,9 @@ button {
     margin-top: 30px;
 }
 
-.items {
+ .items {
   position: relative;
-}
+} 
 
 .items a::before {
   content: "";
