@@ -7,6 +7,8 @@ The HTML pages in this project are located in the root directory and include:
 form.html
 firstApp.html
 firstTools.html
+testGrid.html
+allProject.html
 Each HTML file is independent of the others and serves a different purpose. The firstTools.html file shows tools used for project management. The firstApp.html file contains display of products, and the form.html file provides a way for visitors to get in touch with the website owners.
 
 CSS Styling
@@ -15,6 +17,7 @@ The CSS files in this project are located in the css directory and include:
 form.css
 firstApp.css
 firstTools.css
+
 
 How to View the Web Pages
 To view the web pages in this project, open the HTML files in a web browser. You can do this by double-clicking on the HTML file in your file explorer or by using the File > Open option in your web browser.
